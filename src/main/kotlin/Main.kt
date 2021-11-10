@@ -28,8 +28,9 @@ Obtener una lista con los alumnos ordenados ascendiente según su nota por evalu
  */
 
 fun main(args: Array<String>) {
-    println("Hello World!")
-
-    // Try adding program arguments at Run/Debug configuration
-    println("Program arguments: ${args.joinToString()}")
+    var alumno1 = Alumno("ID_01", "JHON", "PEREZ", "MARTINEZ")
+    var alumno2 = Alumno("ID_02", "JHON", "PEREZ", "MARTINEZ")
+    var programacion = Modulo(1)
+    println(listOf(alumno1,alumno2).forEach {programacion.introducir(it)})
+    programacion.mostrar_array()
 }
